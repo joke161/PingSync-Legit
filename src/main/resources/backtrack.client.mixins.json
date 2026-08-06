@@ -1,0 +1,12 @@
+{
+	"required": true,
+	"package": "net.backtrack.mod.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"client": [
+		"ProjectileUtilMixin",
+		"EntityRendererMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}

@@ -1,0 +1,31 @@
+{
+	"schemaVersion": 1,
+	"id": "backtrack",
+	"version": "${version}",
+	"name": "PingSync",
+	"description": "Advanced Ping Synchronization and Backtrack Mod for Minecraft Fabric 1.21.1",
+	"authors": [
+		"joke"
+	],
+	"contact": {},
+	"license": "MIT",
+	"icon": "assets/backtrack/icon.png",
+	"environment": "client",
+	"entrypoints": {
+		"client": [
+			"net.backtrack.mod.BacktrackClientMod"
+		],
+		"modmenu": [
+			"net.backtrack.mod.integration.BacktrackModMenu"
+		]
+	},
+	"mixins": [
+		"backtrack.client.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.0",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
